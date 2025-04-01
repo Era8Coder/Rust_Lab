@@ -8,6 +8,10 @@ fn main(){
 
     let third: &i32 = &v[2];
     println!("The third element is {third}");
+    
+    for i in &v {
+        println!("{i}");
+    }
 
     let third: Option<&i32> = v.get(2);
     match third {
